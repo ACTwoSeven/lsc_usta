@@ -5,7 +5,12 @@ Este proyecto fue creado en la Universidad Santo Tomás de Bucaramanga, en el pr
 
 # Dataset
 Para desarrollar este proyecto se utilizó un dataset que estaba conformado por todas las letras del abecedario, a-z, incluido las letras dinámicas (g, h, j, ñ, rr, s, z)
-En todo el dataset utilizamos imágenes y videos propios de los estudiantes de la clase de python 2025, junto a un dataset de open access perteneciente a la Universidad del Cauca con DOI https://doi.org/10.1016/j.dib.2024.111213. En el dataset de la Universidad del Cauca tienen +200 imágenes por cada letra, por lo que nos funciona para complementar nuestro dataset y poder fortalecer el entrenamiento. Para nuestro dataset aprovechamos el curso gratuito de Academy Edutin y aprendimos sobre LSC, por lo cual aplicamos letras como rr que hace parte del abecedario lsc.
+En todo el dataset utilizamos imágenes y videos propios de los estudiantes de la clase de python 2025, junto a un dataset de open access perteneciente a la Universidad del Cauca con DOI https://doi.org/10.1016/j.dib.2024.111213. En el dataset de la Universidad del Cauca tienen +200 imágenes por cada letra, por lo que nos funciona para complementar nuestro dataset y poder fortalecer el entrenamiento. 
+Dataset Universidad del Cauca: ![image](https://github.com/user-attachments/assets/9336cfe8-586f-4a35-8adb-f4a6fd369eae)
+
+Dataset Universidad Santo Tomás Bucaramanga: ![image](https://github.com/user-attachments/assets/5120544a-ac5b-45d6-9f37-866ea1fbffa9)
+
+Para nuestro dataset aprovechamos el curso gratuito de Academy Edutin y aprendimos sobre LSC, por lo cual aplicamos letras como rr que hace parte del abecedario lsc.
 En la carpeta de dataset vas a poder encontrar tanto el dinámico como estático. Esta división se debe al entrenamiento, pues por un lado entrenamos un modelo con el dataset de las letras estáticas y por otro lado el de letras dinámicas.
 Todas las imágenes tienen un tamaño de 640x480.
 En las letras estáticas se hizo data augmentation para generalizar los datos, luego por cada imagen se sacaron los landmarks, en total 21 de cada mano por cada posición x,y,z teniendo un vector de 63 puntos guardados en archivos npy para entrenar el modelo estático.
