@@ -609,9 +609,9 @@ class LSCRecognitionSystem:
 if __name__ == "__main__":
     try:
         # Configurar rutas a los modelos
-        STATIC_MODEL_PATH = 'best_model_landmarks.h5'
-        DYNAMIC_MODEL_PATH = 'modelo_lsc_dinamico2.h5'
-        DYNAMIC_CLASSES_PATH = 'letras_dinamicas_classes (1).npy'
+        STATIC_MODEL_PATH = 'model_lsc_static.h5'
+        DYNAMIC_MODEL_PATH = 'model_lsc_dinamic.h5'
+        DYNAMIC_CLASSES_PATH = 'dinamic_classes.npy'
 
         # Crear y ejecutar el sistema
         system = LSCRecognitionSystem(
