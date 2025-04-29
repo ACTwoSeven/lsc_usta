@@ -6,7 +6,8 @@ Este proyecto fue creado en la Universidad Santo Tomás de Bucaramanga, en el pr
 # Dataset
 Para desarrollar este proyecto se utilizó un dataset que estaba conformado por todas las letras del abecedario, a-z, incluido las letras dinámicas (g, h, j, ñ, rr, s, z)
 En todo el dataset utilizamos imágenes y videos propios de los estudiantes de la clase de python 2025, junto a un dataset de open access perteneciente a la Universidad del Cauca con DOI https://doi.org/10.1016/j.dib.2024.111213. En el dataset de la Universidad del Cauca tienen +200 imágenes por cada letra, por lo que nos funciona para complementar nuestro dataset y poder fortalecer el entrenamiento. 
-Dataset Universidad del Cauca: ![image](https://github.com/user-attachments/assets/9336cfe8-586f-4a35-8adb-f4a6fd369eae)
+Dataset Universidad del Cauca: 
+![image](https://github.com/user-attachments/assets/9336cfe8-586f-4a35-8adb-f4a6fd369eae)
 
 Dataset Universidad Santo Tomás Bucaramanga: ![image](https://github.com/user-attachments/assets/5120544a-ac5b-45d6-9f37-866ea1fbffa9)
 
