@@ -5,8 +5,9 @@ Este proyecto fue creado en la Universidad Santo Tomás de Bucaramanga, en el pr
 
 # Dataset
 Para desarrollar este proyecto se utilizó un dataset que estaba conformado por todas las letras del abecedario, a-z, incluido las letras dinámicas (g, h, j, ñ, rr, s, z)
-En todo el dataset utilizamos imágenes y videos propios de los estudiantes de la clase de python 2025, junto a un dataset de open access perteneciente a la Universidad del Cauca con DOI https://doi.org/10.1016/j.dib.2024.111213. En el dataset de la Universidad del Cauca tienen +200 imágenes por cada letra, por lo que nos funciona para complementar nuestro dataset y poder fortalecer el entrenamiento. 
+En todo el dataset utilizamos imágenes y videos propios de los estudiantes de la clase de python 2025, junto a un dataset de open access perteneciente a la Universidad del Cauca con DOI https://doi.org/10.1016/j.dib.2024.111213. En el dataset de la Universidad del Cauca tienen +200 imágenes por cada letra, por lo que nos funciona para complementar nuestro dataset y poder fortalecer el entrenamiento. Específicamente usamos el dataset LSC70AN donde las personas aparecen en medio cuerpo.
 Dataset Universidad del Cauca: 
+
 ![image](https://github.com/user-attachments/assets/9336cfe8-586f-4a35-8adb-f4a6fd369eae)
 
 Dataset Universidad Santo Tomás Bucaramanga: ![image](https://github.com/user-attachments/assets/5120544a-ac5b-45d6-9f37-866ea1fbffa9)
@@ -23,7 +24,7 @@ Para el modelo estático se uso una división de los datos 70/15/15, donde 70% f
 ![image](https://github.com/user-attachments/assets/b81fd7c6-efac-4ff3-b12c-7dd2b6eeea25)
 Al usar data augmentation los resultados de la métrica accuracy no son muy altos, sin embargo, al llevar el modelo a la práctica sin duda responde muy bien a las letras.
 
-Para el modelo dinámico en cambio se uso un 80/10/10, con un 80% para entrenamiento y una menor cantidad de datos, en este caso al juntar 4 frames para cada frecuencia logramos generar hasta 32 secuencias para una letra, secuencias que nos ayudan a entrenar el modelo obteniendo:
+Para el modelo dinámico en cambio se uso un 80/10/10, con un 80% para entrenamiento y una menor cantidad de datos, en este caso al juntar 6 frames para cada frecuencia logramos generar hasta 32 secuencias para una letra, secuencias que nos ayudan a entrenar el modelo obteniendo:
 ![image](https://github.com/user-attachments/assets/de7c7454-430c-4eab-8d45-469ff17e7bfc)
 ![image](https://github.com/user-attachments/assets/7372a7b3-5e2b-4b5a-a09a-58b533a278c7)
 En este caso se repite el mismo patrón, donde el accuracy no es el mejor y se podría optimizar el modelo, sin embargo, en la práctica el comportamiento es más que adecuado para los recursos gastados y el fin del modelo.
